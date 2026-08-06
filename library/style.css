@@ -1,0 +1,25 @@
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    padding:20px;
+}
+a{
+    margin:10px;
+    text-decoration:none;
+}
+.box{
+    border:1px solid black;
+    padding:10px;
+    width:200px;
+    margin:10px 0;
+}
+button{
+    padding:5px 10px;
+    background:blue;
+    color:white;
+    border:none;
+}
+input,textarea{
+    padding:5px;
+    width:200px;
+}
