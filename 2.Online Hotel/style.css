@@ -1,0 +1,27 @@
+body{
+    font-family:Arial;
+    background:#f5f5f5;
+    padding:20px;
+}
+a{
+    margin:10px;
+    text-decoration:none;
+}
+.room{
+    border:1px solid black;
+    width:200px;
+    padding:10px;
+    margin:10px 0;
+}
+input,button{
+    padding:5px;
+    margin:5px;
+}
+button{
+    background:green;
+    color:white;
+    border:none;
+}
+ul{
+    padding-left:20px;
+}
