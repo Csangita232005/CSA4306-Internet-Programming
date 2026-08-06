@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bus Ticket Booking</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<header>
+    <h1>Online Bus Ticket Booking System</h1>
+</header>
+
+<div class='container'>
+    <h2>User Registration</h2>
+    <input type='text' id='regName' placeholder='Enter Name'>
+    <input type='email' id='regEmail' placeholder='Enter Email'>
+    <input type='password' id='regPass' placeholder='Enter Password'>
+    <button onclick='registerUser()'>Register</button>
+</div>
+
+<div class='container'>
+    <h2>Login</h2>
+    <input type='email' id='loginEmail' placeholder='Enter Email'>
+    <input type='password' id='loginPass' placeholder='Enter Password'>
+    <button onclick='loginUser()'>Login</button>
+</div>
+
+<div class='container'>
+    <h2>Search Bus</h2>
+    <input type='text' id='route' placeholder='Enter Route'>
+    <input type='date' id='date'>
+    <select id='busType'>
+        <option>Volvo</option>
+        <option>Sleeper Coach</option>
+        <option>Coach</option>
+    </select>
+    <button onclick='searchBus()'>Search Bus</button>
+</div>
+
+<div class='container'>
+    <h2>Book Ticket</h2>
+    <input type='text' id='passenger' placeholder='Passenger Name'>
+    <input type='number' id='seat' placeholder='Seat Number'>
+    <button onclick='bookTicket()'>Book Ticket</button>
+</div>
+
+<div class='container'>
+    <h2>Cancel Ticket</h2>
+    <input type='number' id='cancelSeat' placeholder='Seat Number'>
+    <button onclick='cancelTicket()'>Cancel Booking</button>
+</div>
+
+<div class='container'>
+    <h2>Comments</h2>
+    <textarea id='comment' placeholder='Write your comment'></textarea>
+    <button onclick='postComment()'>Post Comment</button>
+</div>
+
+<div class='container'>
+    <h2>Output</h2>
+    <div id='output'></div>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>
