@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flight Reservation System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Online Flight Reservation System</h1>
+        </header>
+        <div class="box">
+            <h2>Search Flight</h2>
+            <input type="text" id="from" placeholder="From">
+            <input type="text" id="to" placeholder="Destination">
+            <input type="date" id="date">
+            <select id="class">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+            <button onclick="bookFlight()">Book Flight</button>
+            <p id="result"></p>
+        </div>
+        <div class="flight">
+            <h3>Air India</h3>
+            <p>Seats Available : 45</p>
+            <p>Fare : ₹5500</p>
+        </div>
+        <div class="flight">
+            <h3>IndiGo</h3>
+            <p>Seats Available : 32</p>
+            <p>Fare : ₹4200</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
