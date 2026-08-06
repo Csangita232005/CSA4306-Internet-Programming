@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train Reservation System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Online Train Reservation System</h1>
+        </header>
+        <div class="box">
+            <h2>Search Train</h2>
+            <input type="text" id="from" placeholder="From Station">
+            <input type="text" id="to" placeholder="To Station">
+            <input type="date" id="date">
+            <select id="class">
+                <option>Sleeper</option>
+                <option>AC 3 Tier</option>
+                <option>AC 2 Tier</option>
+                <option>First Class</option>
+            </select>
+            <button onclick="bookTrain()">Book Ticket</button>
+            <p id="result"></p>
+        </div>
+        <div class="train">
+            <h3>Express Train</h3>
+            <p>Available Seats : 50</p>
+            <p>Fare : ₹450</p>
+        </div>
+        <div class="train">
+            <h3>Superfast Train</h3>
+            <p>Available Seats : 35</p>
+            <p>Fare : ₹650</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
