@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AgriMart</h1>
+    <p>Online Agricultural Products Store</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#login">Farmer Login</a>
+</nav>
+
+<section>
+    <h2>Categories</h2>
+
+    <button>Seeds</button>
+    <button>Fertilizers</button>
+    <button>Pesticides</button>
+    <button>Equipment</button>
+    <button>Tools</button>
+</section>
+
+<section id="products">
+    <h2>Products</h2>
+
+    <input type="text" id="search"
+           placeholder="Search product">
+
+    <button onclick="searchProduct()">Search</button>
+
+    <div class="product">
+        <h3>Rice Seeds</h3>
+        <p>₹500</p>
+        <button onclick="buy('Rice Seeds')">Buy</button>
+    </div>
+
+    <div class="product">
+        <h3>Organic Fertilizer</h3>
+        <p>₹800</p>
+        <button onclick="buy('Organic Fertilizer')">Buy</button>
+    </div>
+
+    <div class="product">
+        <h3>Farming Tools</h3>
+        <p>₹1200</p>
+        <button onclick="buy('Farming Tools')">Buy</button>
+    </div>
+
+    <p id="message"></p>
+</section>
+
+<section id="login">
+    <h2>Farmer Login</h2>
+
+    <input type="text" id="username"
+           placeholder="Username">
+
+    <input type="password" id="password"
+           placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMsg"></p>
+</section>
+
+<section>
+    <h2>Order Status</h2>
+
+    <button onclick="checkOrder()">
+        Check Shipping Status
+    </button>
+
+    <p id="orderMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 AgriMart</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
