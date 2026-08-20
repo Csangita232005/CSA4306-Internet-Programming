@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoteOnline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>VoteOnline</h1>
+    <p>Online E-Voting System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#vote">Vote</a>
+    <a href="#result">Results</a>
+    <a href="#login">Login</a>
+</nav>
+
+<section id="login">
+    <h2>Voter Login</h2>
+
+    <input type="text" id="voter"
+           placeholder="Voter ID">
+
+    <input type="text" id="otp"
+           placeholder="Enter OTP">
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMsg"></p>
+</section>
+
+<section id="vote">
+    <h2>Cast Your Vote</h2>
+
+    <label>
+        <input type="radio" name="candidate" value="Candidate A">
+        Candidate A
+    </label>
+    <br><br>
+
+    <label>
+        <input type="radio" name="candidate" value="Candidate B">
+        Candidate B
+    </label>
+    <br><br>
+
+    <label>
+        <input type="radio" name="candidate" value="Candidate C">
+        Candidate C
+    </label>
+    <br><br>
+
+    <button onclick="vote()">Submit Vote</button>
+
+    <p id="voteMsg"></p>
+</section>
+
+<section id="result">
+    <h2>Election Results</h2>
+
+    <p>Candidate A - 120 Votes</p>
+    <p>Candidate B - 100 Votes</p>
+    <p>Candidate C - 80 Votes</p>
+
+    <button onclick="showResult()">View Result</button>
+
+    <p id="resultMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 VoteOnline</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
