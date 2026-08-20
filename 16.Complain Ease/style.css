@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+header {
+    background: #7b241c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #922b21;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+
+section {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin: 5px;
+}
+
+textarea {
+    width: 90%;
+    height: 70px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #922b21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+p {
+    color: green;
+}
+
+footer {
+    background: #7b241c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

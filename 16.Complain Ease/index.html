@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComplainEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>ComplainEase</h1>
+    <p>Online Complaint Management System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#complaint">Complaint</a>
+    <a href="#status">Status</a>
+    <a href="#login">Login</a>
+</nav>
+
+<section id="login">
+    <h2>User Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMsg"></p>
+</section>
+
+<section id="complaint">
+    <h2>Post Complaint</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <select id="category">
+        <option value="">Select Category</option>
+        <option>Road</option>
+        <option>Water</option>
+        <option>Electricity</option>
+        <option>Other</option>
+    </select>
+
+    <textarea id="description"
+        placeholder="Enter Complaint"></textarea>
+
+    <button onclick="submitComplaint()">Submit</button>
+
+    <p id="complaintMsg"></p>
+</section>
+
+<section id="status">
+    <h2>Complaint Status</h2>
+
+    <input type="text" id="complaintId"
+        placeholder="Complaint ID">
+
+    <button onclick="checkStatus()">Check Status</button>
+
+    <p id="statusMsg"></p>
+</section>
+
+<section>
+    <h2>Feedback</h2>
+
+    <textarea id="feedback"
+        placeholder="Enter your feedback"></textarea>
+
+    <button onclick="sendFeedback()">Submit Feedback</button>
+
+    <p id="feedbackMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 ComplainEase</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
