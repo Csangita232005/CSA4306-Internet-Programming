@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReNewMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>ReNewMarket</h1>
+    <p>Buy and Sell Second-Hand Products</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#login">Login</a>
+</nav>
+
+<section>
+    <h2>Categories</h2>
+    <button>Electronics</button>
+    <button>Furniture</button>
+    <button>Clothing</button>
+</section>
+
+<section id="products">
+    <h2>Available Products</h2>
+
+    <div class="product">
+        <h3>Used Laptop</h3>
+        <p>Price: ₹25,000</p>
+        <button onclick="buy('Used Laptop')">Buy</button>
+    </div>
+
+    <div class="product">
+        <h3>Office Chair</h3>
+        <p>Price: ₹3,000</p>
+        <button onclick="buy('Office Chair')">Buy</button>
+    </div>
+
+    <div class="product">
+        <h3>Mobile Phone</h3>
+        <p>Price: ₹12,000</p>
+        <button onclick="buy('Mobile Phone')">Buy</button>
+    </div>
+</section>
+
+<section id="login">
+    <h2>User Login</h2>
+
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 ReNewMarket</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
