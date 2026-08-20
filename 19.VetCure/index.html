@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VetCure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>VetCure</h1>
+    <p>Farmer - Veterinary Assistance System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#farmer">Farmer</a>
+    <a href="#doctor">Doctor</a>
+    <a href="#payment">Payment</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h2>VetCure Services</h2>
+    <p>
+        Get veterinary assistance for your animals.
+        Send symptoms and receive solutions from doctors.
+    </p>
+
+    <div class="card">
+        <h3>Animal Diseases</h3>
+        <p>View common animal diseases and prescriptions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Veterinary Doctors</h3>
+        <p>Consult registered veterinary doctors.</p>
+    </div>
+
+    <div class="card">
+        <h3>Latest News</h3>
+        <p>Get the latest veterinary information.</p>
+    </div>
+</section>
+
+<!-- FARMER -->
+<section id="farmer">
+    <h2>Farmer Registration</h2>
+
+    <input type="text" id="farmerName"
+           placeholder="Farmer Name">
+
+    <input type="email" id="farmerEmail"
+           placeholder="Email">
+
+    <input type="password" id="farmerPassword"
+           placeholder="Password">
+
+    <button onclick="registerFarmer()">Register</button>
+
+    <p id="registerMsg"></p>
+
+    <h2>Farmer Login</h2>
+
+    <input type="text" id="loginName"
+           placeholder="Username">
+
+    <input type="password" id="loginPassword"
+           placeholder="Password">
+
+    <button onclick="farmerLogin()">Login</button>
+
+    <p id="loginMsg"></p>
+</section>
+
+<!-- COMPLAINT -->
+<section>
+    <h2>Post Animal Complaint</h2>
+
+    <input type="text" id="animal"
+           placeholder="Animal Name">
+
+    <textarea id="symptoms"
+        placeholder="Enter signs and symptoms"></textarea>
+
+    <label>Upload Image:</label>
+    <input type="file" accept="image/*">
+
+    <label>Upload Video / Audio:</label>
+    <input type="file">
+
+    <button onclick="postComplaint()">
+        Submit Complaint
+    </button>
+
+    <p id="complaintMsg"></p>
+</section>
+
+<!-- FARMER INFORMATION -->
+<section>
+    <h2>Farmer Services</h2>
+
+    <button onclick="showStatus()">My Complaint Status</button>
+    <button onclick="showDoctor()">View Doctor</button>
+    <button onclick="showReport()">View Report</button>
+    <button onclick="showNews()">View News</button>
+
+    <p id="serviceMsg"></p>
+</section>
+
+<!-- FEEDBACK -->
+<section>
+    <h2>Post Feedback</h2>
+
+    <textarea id="feedback"
+        placeholder="Enter your feedback"></textarea>
+
+    <button onclick="postFeedback()">Submit Feedback</button>
+
+    <p id="feedbackMsg"></p>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment">
+    <h2>Make Payment</h2>
+
+    <select id="paymentMethod">
+        <option>Bank Transfer</option>
+        <option>Easy Paisa</option>
+    </select>
+
+    <input type="number" id="amount"
+           placeholder="Enter Amount">
+
+    <button onclick="makePayment()">Pay Now</button>
+
+    <p id="paymentMsg"></p>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor">
+    <h2>Doctor Registration</h2>
+
+    <input type="text" id="doctorName"
+           placeholder="Doctor Name">
+
+    <input type="email" id="doctorEmail"
+           placeholder="Email">
+
+    <button onclick="registerDoctor()">Register</button>
+
+    <p id="doctorRegisterMsg"></p>
+
+    <h2>Doctor Login</h2>
+
+    <input type="text" id="doctorUser"
+           placeholder="Username">
+
+    <input type="password" id="doctorPass"
+           placeholder="Password">
+
+    <button onclick="doctorLogin()">Login</button>
+
+    <p id="doctorLoginMsg"></p>
+</section>
+
+<!-- DOCTOR FUNCTIONS -->
+<section>
+    <h2>Doctor Dashboard</h2>
+
+    <button onclick="viewComplaint()">
+        View Complaint
+    </button>
+
+    <button onclick="postSolution()">
+        Post Solution
+    </button>
+
+    <button onclick="manageCure()">
+        Manage Cure
+    </button>
+
+    <button onclick="manageNews()">
+        Manage News
+    </button>
+
+    <button onclick="viewUser()">
+        View User Details
+    </button>
+
+    <button onclick="viewPayment()">
+        View Payment Details
+    </button>
+
+    <button onclick="viewFeedback()">
+        Feedback Details
+    </button>
+
+    <p id="doctorMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 VetCure</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
