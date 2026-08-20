@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RentRide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>RentRide</h1>
+    <p>Online Vehicle Rental System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#booking">Booking</a>
+    <a href="#admin">Admin</a>
+    <a href="#user">User</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to RentRide</h2>
+    <p>Rent cars, trucks and SUVs easily.</p>
+</section>
+
+<!-- USER -->
+<section id="user">
+    <h2>User Registration</h2>
+
+    <input type="text" id="userName"
+           placeholder="Name">
+
+    <input type="email" id="userEmail"
+           placeholder="Email">
+
+    <button onclick="registerUser()">Register</button>
+
+    <p id="userMsg"></p>
+
+    <h2>User Login</h2>
+
+    <input type="text" id="loginUser"
+           placeholder="Username">
+
+    <input type="password" id="loginPass"
+           placeholder="Password">
+
+    <button onclick="userLogin()">Login</button>
+
+    <p id="loginMsg"></p>
+</section>
+
+<!-- SEARCH VEHICLES -->
+<section id="vehicles">
+    <h2>Search Vehicles</h2>
+
+    <select id="vehicleType">
+        <option value="">Select Vehicle</option>
+        <option>Car</option>
+        <option>SUV</option>
+        <option>Truck</option>
+    </select>
+
+    <input type="text" id="location"
+           placeholder="Location">
+
+    <input type="number" id="days"
+           placeholder="Rental Days">
+
+    <button onclick="searchVehicle()">Search</button>
+
+    <p id="searchMsg"></p>
+
+    <div class="vehicle">
+        <h3>Swift Car</h3>
+        <p>Type: Car</p>
+        <p>Price: ₹1500/day</p>
+        <button onclick="selectVehicle('Swift Car')">
+            Select
+        </button>
+    </div>
+
+    <div class="vehicle">
+        <h3>Creta SUV</h3>
+        <p>Type: SUV</p>
+        <p>Price: ₹2500/day</p>
+        <button onclick="selectVehicle('Creta SUV')">
+            Select
+        </button>
+    </div>
+
+    <div class="vehicle">
+        <h3>Tata Truck</h3>
+        <p>Type: Truck</p>
+        <p>Price: ₹3000/day</p>
+        <button onclick="selectVehicle('Tata Truck')">
+            Select
+        </button>
+    </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+    <h2>Make Vehicle Booking</h2>
+
+    <input type="text" id="customer"
+           placeholder="Customer Name">
+
+    <input type="text" id="selectedVehicle"
+           placeholder="Vehicle">
+
+    <input type="text" id="address"
+           placeholder="Address">
+
+    <input type="number" id="customerNo"
+           placeholder="Customer Number">
+
+    <input type="date" id="date">
+
+    <button onclick="makeBooking()">Book Vehicle</button>
+
+    <p id="bookingMsg"></p>
+
+    <h3>Booking Status</h3>
+
+    <button onclick="bookingStatus()">
+        View Booking Status
+    </button>
+
+    <p id="statusMsg"></p>
+</section>
+
+<!-- ADMIN -->
+<section id="admin">
+    <h2>Admin Login</h2>
+
+    <input type="text" id="adminUser"
+           placeholder="Admin Username">
+
+    <input type="password" id="adminPass"
+           placeholder="Password">
+
+    <button onclick="adminLogin()">Login</button>
+
+    <p id="adminMsg"></p>
+
+    <h2>Add Vehicle</h2>
+
+    <input type="text" id="newVehicle"
+           placeholder="Vehicle Name">
+
+    <input type="text" id="newType"
+           placeholder="Vehicle Type">
+
+    <input type="number" id="newPrice"
+           placeholder="Price per Day">
+
+    <button onclick="addVehicle()">Add Vehicle</button>
+
+    <p id="vehicleMsg"></p>
+
+    <h2>Manage Booking</h2>
+
+    <button onclick="approveBooking()">
+        Approve User Booking
+    </button>
+
+    <button onclick="manageVehicle()">
+        Manage Vehicle Details
+    </button>
+
+    <p id="manageMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 RentRide</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
