@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Home Finder</h1>
+        <p>Find Your Dream Home</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#search">Search</a>
+        <a href="#properties">Properties</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <section id="search">
+        <h2>Search Property</h2>
+
+        <input type="text" id="location" placeholder="Enter Location">
+
+        <select id="type">
+            <option value="">Property Type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Land</option>
+        </select>
+
+        <input type="number" id="price" placeholder="Maximum Price">
+
+        <button onclick="searchProperty()">Search</button>
+
+        <p id="searchResult"></p>
+    </section>
+
+    <section id="properties">
+        <h2>Available Properties</h2>
+
+        <div class="property">
+            <h3>2 BHK House</h3>
+            <p>Location: Chennai</p>
+            <p>Price: ₹50,00,000</p>
+            <button onclick="showDetails('2 BHK House')">
+                View Details
+            </button>
+        </div>
+
+        <div class="property">
+            <h3>3 BHK Apartment</h3>
+            <p>Location: Bangalore</p>
+            <p>Price: ₹70,00,000</p>
+            <button onclick="showDetails('3 BHK Apartment')">
+                View Details
+            </button>
+        </div>
+
+        <div class="property">
+            <h3>Residential Land</h3>
+            <p>Location: Hyderabad</p>
+            <p>Price: ₹30,00,000</p>
+            <button onclick="showDetails('Residential Land')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <section id="login">
+        <h2>Buyer Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="loginResult"></p>
+    </section>
+
+    <section>
+        <h2>Agent / Company Search</h2>
+
+        <input type="text" id="agent" placeholder="Enter Agent or Company">
+
+        <button onclick="searchAgent()">Search</button>
+
+        <p id="agentResult"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Home Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

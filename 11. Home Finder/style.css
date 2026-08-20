@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f6391;
+}
+
+.property {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.property h3 {
+    color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#searchResult,
+#loginResult,
+#agentResult {
+    color: green;
+    font-weight: bold;
+}
