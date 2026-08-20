@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>JobConnect</h1>
+    <p>Online Job Vacancy Portal</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#jobs">Vacancies</a>
+    <a href="#user">User</a>
+    <a href="#director">Director</a>
+    <a href="#admin">Admin</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h2>Find Your Dream Job</h2>
+    <p>
+        Search vacancies, filter jobs and apply online easily.
+    </p>
+</section>
+
+<!-- USER REGISTRATION -->
+<section id="user">
+    <h2>User Registration</h2>
+
+    <input type="text" id="userName"
+           placeholder="Full Name">
+
+    <input type="email" id="userEmail"
+           placeholder="Email">
+
+    <input type="password" id="userPassword"
+           placeholder="Password">
+
+    <button onclick="registerUser()">Register</button>
+
+    <p id="userRegisterMsg"></p>
+
+    <h2>User Login</h2>
+
+    <input type="text" id="userLogin"
+           placeholder="Username">
+
+    <input type="password" id="userLoginPass"
+           placeholder="Password">
+
+    <button onclick="userLogin()">Login</button>
+
+    <p id="userLoginMsg"></p>
+</section>
+
+<!-- SEARCH AND FILTER -->
+<section id="jobs">
+    <h2>Search Vacancies</h2>
+
+    <input type="text" id="searchJob"
+           placeholder="Search job">
+
+    <select id="location">
+        <option value="">Location</option>
+        <option>Chennai</option>
+        <option>Bangalore</option>
+        <option>Hyderabad</option>
+    </select>
+
+    <select id="category">
+        <option value="">Category</option>
+        <option>Software</option>
+        <option>Marketing</option>
+        <option>Finance</option>
+    </select>
+
+    <button onclick="searchJobs()">Search</button>
+
+    <p id="searchMsg"></p>
+
+    <div class="job">
+        <h3>Software Developer</h3>
+        <p>Company: ABC Technologies</p>
+        <p>Location: Chennai</p>
+        <p>Category: Software</p>
+        <button onclick="applyJob('Software Developer')">
+            Apply
+        </button>
+    </div>
+
+    <div class="job">
+        <h3>Marketing Executive</h3>
+        <p>Company: XYZ Ltd</p>
+        <p>Location: Bangalore</p>
+        <p>Category: Marketing</p>
+        <button onclick="applyJob('Marketing Executive')">
+            Apply
+        </button>
+    </div>
+
+    <div class="job">
+        <h3>Financial Analyst</h3>
+        <p>Company: Finance Corp</p>
+        <p>Location: Hyderabad</p>
+        <p>Category: Finance</p>
+        <button onclick="applyJob('Financial Analyst')">
+            Apply
+        </button>
+    </div>
+
+    <p id="applyMsg"></p>
+</section>
+
+<!-- DIRECTOR -->
+<section id="director">
+    <h2>Director Registration</h2>
+
+    <input type="text" id="directorName"
+           placeholder="Director Name">
+
+    <input type="email" id="directorEmail"
+           placeholder="Email">
+
+    <button onclick="registerDirector()">
+        Register
+    </button>
+
+    <p id="directorRegisterMsg"></p>
+
+    <h2>Director Login</h2>
+
+    <input type="text" id="directorUser"
+           placeholder="Username">
+
+    <input type="password" id="directorPass"
+           placeholder="Password">
+
+    <button onclick="directorLogin()">Login</button>
+
+    <p id="directorLoginMsg"></p>
+
+    <h2>Post Vacancy</h2>
+
+    <input type="text" id="jobTitle"
+           placeholder="Job Title">
+
+    <textarea id="jobDescription"
+        placeholder="Job Description"></textarea>
+
+    <input type="text" id="jobContact"
+           placeholder="Contact Details">
+
+    <input type="text" id="jobImage"
+           placeholder="Image URL">
+
+    <button onclick="postVacancy()">
+        Post Vacancy
+    </button>
+
+    <p id="vacancyMsg"></p>
+
+    <button onclick="viewApplicants()">
+        View Applied Users
+    </button>
+
+    <p id="applicantMsg"></p>
+</section>
+
+<!-- ADMIN -->
+<section id="admin">
+    <h2>Admin Login</h2>
+
+    <input type="text" id="adminUser"
+           placeholder="Admin Username">
+
+    <input type="password" id="adminPass"
+           placeholder="Password">
+
+    <button onclick="adminLogin()">Login</button>
+
+    <p id="adminLoginMsg"></p>
+
+    <h2>Admin Management</h2>
+
+    <button onclick="approveDirector()">
+        Approve Director
+    </button>
+
+    <button onclick="viewUsers()">
+        View Users
+    </button>
+
+    <button onclick="viewReport()">
+        View Report
+    </button>
+
+    <p id="adminMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 JobConnect</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
