@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyToll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>EasyToll</h1>
+    <p>Online Toll Payment System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#wallet">eWallet</a>
+    <a href="#toll">Toll Pass</a>
+    <a href="#login">Login</a>
+</nav>
+
+<section id="login">
+    <h2>User Login</h2>
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</section>
+
+<section id="wallet">
+    <h2>eWallet</h2>
+    <p>Balance: ₹1000</p>
+
+    <input type="number" id="amount" placeholder="Add Money">
+    <button onclick="addMoney()">Add Money</button>
+
+    <p id="walletMsg"></p>
+</section>
+
+<section id="toll">
+    <h2>Toll Services</h2>
+
+    <div class="card">
+        <h3>Toll eTicket</h3>
+        <button onclick="buyTicket()">Buy eTicket</button>
+    </div>
+
+    <div class="card">
+        <h3>Toll Pass</h3>
+        <button onclick="applyPass()">Apply Toll Pass</button>
+    </div>
+
+    <div class="card">
+        <h3>QR Code</h3>
+        <button onclick="generateQR()">Generate QR</button>
+    </div>
+
+    <p id="result"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
