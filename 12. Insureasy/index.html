@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InsureEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>InsureEasy</h1>
+    <p>Online Insurance Management System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#policy">Policies</a>
+    <a href="#agent">Agent</a>
+    <a href="#login">Login</a>
+</nav>
+
+<section>
+    <h2>Insurance Policies</h2>
+
+    <div class="card">
+        <h3>Health Insurance</h3>
+        <p>Coverage for medical expenses.</p>
+        <button onclick="selectPolicy('Health Insurance')">
+            Select
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Vehicle Insurance</h3>
+        <p>Protection for your vehicle.</p>
+        <button onclick="selectPolicy('Vehicle Insurance')">
+            Select
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Home Insurance</h3>
+        <p>Protection for your home.</p>
+        <button onclick="selectPolicy('Home Insurance')">
+            Select
+        </button>
+    </div>
+</section>
+
+<section id="policy">
+    <h2>Policy Details</h2>
+
+    <input type="text" id="customer"
+           placeholder="Customer Name">
+
+    <input type="text" id="policyName"
+           placeholder="Policy Name">
+
+    <input type="number" id="premium"
+           placeholder="Premium Amount">
+
+    <button onclick="savePolicy()">Save Policy</button>
+
+    <p id="policyResult"></p>
+</section>
+
+<section id="agent">
+    <h2>Agent Registration</h2>
+
+    <input type="text" id="agentName"
+           placeholder="Agent Name">
+
+    <input type="email" id="email"
+           placeholder="Email">
+
+    <button onclick="registerAgent()">Register</button>
+
+    <p id="agentResult"></p>
+</section>
+
+<section id="login">
+    <h2>Login</h2>
+
+    <input type="text" id="username"
+           placeholder="Username">
+
+    <input type="password" id="password"
+           placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginResult"></p>
+</section>
+
+<footer>
+    <p>© 2026 InsureEasy</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
